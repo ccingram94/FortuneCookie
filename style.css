@@ -1,0 +1,73 @@
+h1 {
+	text-align: center;
+	font-family: 'Rock Salt', serif;
+	font-size: 400%;
+	margin: 30px;
+	color: white;
+	text-shadow: 2px 2px 10px #c10131;
+}
+
+body {
+	background-color: #d8918f;
+	background:linear-gradient(to bottom right, #ff6863, #ffaba8) fixed;
+}
+
+p {
+	padding: 10px;
+	background-color: white;
+	box-shadow: 2px 2px 10px #c10131;
+	display: none;
+	font-family: 'Montserrat', sans-serif;
+	background:linear-gradient(to bottom right, white, #ffdbe3);
+}
+
+#buttondiv {
+	
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cookie {
+	transition-property: all;
+}
+
+#cookie:hover {
+	transform: scale(1.1);
+	transition-duration: .1s;
+	filter: drop-shadow(2px 2px 10px yellow);
+}
+
+#cookie:active {
+	transform: scale(1);
+	transition-duration: .1s;
+}
+
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: .5s;
+	-webkit-animation-duration: .5s;
+	visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
